@@ -37,10 +37,8 @@
             var timeStart = (new Date(document.getElementById("timeStart").value)).getTime();
             var timeFinish = (new Date(document.getElementById("timeFinish").value)).getTime();
             var url = "http://185.144.158.34/api/getCSV?timeStart="+timeStart+"&timeFinish="+timeFinish;
-			            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", url, true ); // false for synchronous request
-            xmlHttp.send( null );
-            return xmlHttp.responseText;
+			window.location.replace(url);
+			alert("see your downloads!");
         }
     </script>
     
